@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="icon" type="image" href="./favicon.png">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Waterlife" />
-<link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image" href="./faviconb.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Waterlife</title>
@@ -45,8 +40,15 @@
         }
 
         @keyframes slideIn {
-            from { transform: translateX(-100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
 
         .fade-in {
@@ -54,8 +56,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .gallery-item {
@@ -76,7 +85,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8) 100%);
+            background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
             display: flex;
@@ -201,13 +210,14 @@
         }
     </style>
 </head>
+
 <body class="bg-black text-white">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-red-900/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                  <img class="h-16 w-48 center" src="./logo cut.png" alt="image" >
+                    <img class="h-16 w-48 center" src="./logo.png" alt="image">
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
@@ -216,13 +226,15 @@
                         <a href="#" class="nav-link active text-white hover:text-red-400">Gallery</a>
                         <a href="./about.html" class="nav-link text-gray-300 hover:text-red-400">About Us</a>
                         <a href="./contact.html" class="nav-link text-gray-300 hover:text-red-400">Contact</a>
-                        <a href="./Waterlife_Catalogue (2).pdf" class="nav-link text-gray-300 hover:text-red-400">Download Catalogue</a>
+                        <a href="./Waterlife_Catalogue (2).pdf"
+                            class="nav-link text-gray-300 hover:text-red-400">Download Catalogue</a>
                     </div>
                 </div>
                 <div class="md:hidden">
                     <button onclick="toggleMobileMenu()" class="text-gray-300 hover:text-white">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
@@ -235,7 +247,9 @@
                 <a href="#" class="block px-3 py-2 text-white hover:text-red-400">Gallery</a>
                 <a href="./about.html" class="block px-3 py-2 text-gray-300 hover:text-red-400">About Us</a>
                 <a href="./contact.html" class="block px-3 py-2 text-gray-300 hover:text-red-400">Contact</a>
-                <a href="./Waterlife_Catalogue (2).pdf" class="nav-link block px-3 py-2 text-gray-300 hover:text-red-400">Download Catalogue</a>
+                <a href="https://www.amazon.in/stores/PremiumBathroomCPFittings/page/0BA91826-1B20-4B0F-B825-0A4D9F143CFF?ip_asin=B0HGS5RBBJ&ref_=cm_sw_r_apann_ast_store_XFACAE5W7EF7NDD9KGWN"
+                    <a href="./Waterlife_Catalogue (2).pdf" class="nav-link text-gray-300 hover:text-red-400">Download
+                    Catalogue</a>
             </div>
         </div>
     </nav>
@@ -243,138 +257,168 @@
     <!-- Gallery Section -->
     <section class="py-20 gradient-bg pt-24">
         <div class="max-w-7xl mx-auto px-4">
-            <h1 class="text-5xl font-bold text-center mb-12 slide-in">Project <span class="text-red-500">Gallery</span></h1>
-            
+            <h1 class="text-5xl font-bold text-center mb-12 slide-in">Project <span class="text-red-500">Gallery</span>
+            </h1>
+
             <!-- Gallery Categories -->
             <div class="flex flex-wrap justify-center gap-4 mb-12">
-                <button onclick="filterGallery('all')" class="filter-btn red-gradient px-6 py-3 rounded-lg font-semibold transition-all">All Projects</button>
-                <button onclick="filterGallery('bathrooms')" class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Bathrooms</button>
-                <button onclick="filterGallery('kitchens')" class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Kitchens</button>
-                <button onclick="filterGallery('commercial')" class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Commercial</button>
+                <button onclick="filterGallery('all')"
+                    class="filter-btn red-gradient px-6 py-3 rounded-lg font-semibold transition-all">All
+                    Projects</button>
+                <button onclick="filterGallery('bathrooms')"
+                    class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Bathrooms</button>
+                <button onclick="filterGallery('kitchens')"
+                    class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Kitchens</button>
+                <button onclick="filterGallery('commercial')"
+                    class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Commercial</button>
             </div>
 
             <!-- Gallery Grid -->
             <div id="gallery-grid" class="gallery-grid">
                 <!-- Bathroom Projects -->
-                <div class="gallery-item bathrooms bg-gray-900 rounded-xl overflow-hidden border border-red-900/30" onclick="openLightbox(0)">
+                <div class="gallery-item bathrooms bg-gray-900 rounded-xl overflow-hidden border border-red-900/30"
+                    onclick="openLightbox(0)">
                     <div><img class="rounded-lg w-full h-full" src="./bathroom 1.png" alt="">
-                    <div class="overlay">
-                        <div class="text-white">
-                            <h3 class="text-xl font-semibold mb-2">Modern Master Bathroom</h3>
-                            <p class="text-gray-300">Luxury bathroom with premium fittings and smart features</p>
-                        </div></div>
+                        <div class="overlay">
+                            <div class="text-white">
+                                <h3 class="text-xl font-semibold mb-2">Modern Master Bathroom</h3>
+                                <p class="text-gray-300">Luxury bathroom with premium fittings and smart features</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item bathrooms bg-gray-900 rounded-xl overflow-hidden border border-red-900/30" onclick="openLightbox(1)">
+                <div class="gallery-item bathrooms bg-gray-900 rounded-xl overflow-hidden border border-red-900/30"
+                    onclick="openLightbox(1)">
                     <div><img class="rounded-lg w-full h-full" src="./bathroom 3.png" alt="">
-                    <div class="overlay">
-                        <div class="text-white">
-                            <h3 class="text-xl font-semibold mb-2">Spa-Style Bathroom</h3>
-                            <p class="text-gray-300">Relaxing spa atmosphere with rainfall shower system</p>
-                        </div></div>
+                        <div class="overlay">
+                            <div class="text-white">
+                                <h3 class="text-xl font-semibold mb-2">Spa-Style Bathroom</h3>
+                                <p class="text-gray-300">Relaxing spa atmosphere with rainfall shower system</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item bathrooms bg-gray-900 rounded-xl overflow-hidden border border-red-900/30" onclick="openLightbox(2)">
+                <div class="gallery-item bathrooms bg-gray-900 rounded-xl overflow-hidden border border-red-900/30"
+                    onclick="openLightbox(2)">
                     <div><img class="rounded-lg w-full h-64" src="./bathroom 2.png" alt="">
-                    <div class="overlay">
-                        <div class="text-white">
-                            <h3 class="text-xl font-semibold mb-2">Minimalist Design</h3>
-                            <p class="text-gray-300">Clean lines and contemporary fixtures</p>
-                        </div></div>
+                        <div class="overlay">
+                            <div class="text-white">
+                                <h3 class="text-xl font-semibold mb-2">Minimalist Design</h3>
+                                <p class="text-gray-300">Clean lines and contemporary fixtures</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item bathrooms bg-gray-900 rounded-xl overflow-hidden border border-red-900/30" onclick="openLightbox(3)">
+                <div class="gallery-item bathrooms bg-gray-900 rounded-xl overflow-hidden border border-red-900/30"
+                    onclick="openLightbox(3)">
                     <div><img class="rounded-lg w-full h-64" src="./bathroom 4.png" alt="">
-                    <div class="overlay">
-                        <div class="text-white">
-                            <h3 class="text-xl font-semibold mb-2">Luxury Suite</h3>
-                            <p class="text-gray-300">Premium materials and gold accents</p>
-                        </div></div>
+                        <div class="overlay">
+                            <div class="text-white">
+                                <h3 class="text-xl font-semibold mb-2">Luxury Suite</h3>
+                                <p class="text-gray-300">Premium materials and gold accents</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Kitchen Projects -->
-                <div class="gallery-item kitchens bg-gray-900 rounded-xl overflow-hidden border border-red-900/30" onclick="openLightbox(4)">
+                <div class="gallery-item kitchens bg-gray-900 rounded-xl overflow-hidden border border-red-900/30"
+                    onclick="openLightbox(4)">
                     <div><img class="rounded-lg w-full h-64" src="modern.png" alt="">
-                    <div class="overlay">
-                        <div class="text-white">
-                            <h3 class="text-xl font-semibold mb-2">Modern Kitchen</h3>
-                            <p class="text-gray-300">Sleek kitchen with premium sink and faucet</p>
-                        </div></div>
+                        <div class="overlay">
+                            <div class="text-white">
+                                <h3 class="text-xl font-semibold mb-2">Modern Kitchen</h3>
+                                <p class="text-gray-300">Sleek kitchen with premium sink and faucet</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item kitchens bg-gray-900 rounded-xl overflow-hidden border border-red-900/30" onclick="openLightbox(5)">
+                <div class="gallery-item kitchens bg-gray-900 rounded-xl overflow-hidden border border-red-900/30"
+                    onclick="openLightbox(5)">
                     <div><img class="rounded-lg w-full h-64" src="chef.png" alt="">
-                    <div class="overlay">
-                        <div class="text-white">
-                            <h3 class="text-xl font-semibold mb-2">Chef's Kitchen</h3>
-                            <p class="text-gray-300">Professional-grade fixtures and appliances</p>
-                        </div></div>
+                        <div class="overlay">
+                            <div class="text-white">
+                                <h3 class="text-xl font-semibold mb-2">Chef's Kitchen</h3>
+                                <p class="text-gray-300">Professional-grade fixtures and appliances</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item kitchens bg-gray-900 rounded-xl overflow-hidden border border-red-900/30" onclick="openLightbox(6)">
+                <div class="gallery-item kitchens bg-gray-900 rounded-xl overflow-hidden border border-red-900/30"
+                    onclick="openLightbox(6)">
                     <div><img class="rounded-lg w-full h-64" src="island.png" alt="">
-                    <div class="overlay">
-                        <div class="text-white">
-                            <h3 class="text-xl font-semibold mb-2">Island Kitchen</h3>
-                            <p class="text-gray-300">Central island with integrated sink system</p>
-                        </div></div>
+                        <div class="overlay">
+                            <div class="text-white">
+                                <h3 class="text-xl font-semibold mb-2">Island Kitchen</h3>
+                                <p class="text-gray-300">Central island with integrated sink system</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item kitchens bg-gray-900 rounded-xl overflow-hidden border border-red-900/30" onclick="openLightbox(7)">
+                <div class="gallery-item kitchens bg-gray-900 rounded-xl overflow-hidden border border-red-900/30"
+                    onclick="openLightbox(7)">
                     <div><img class="rounded-lg w-full h-64" src="compact.png" alt="">
-                    <div class="overlay">
-                        <div class="text-white">
-                            <h3 class="text-xl font-semibold mb-2">Compact Kitchen</h3>
-                            <p class="text-gray-300">Space-efficient design with smart storage</p>
-                        </div></div>
+                        <div class="overlay">
+                            <div class="text-white">
+                                <h3 class="text-xl font-semibold mb-2">Compact Kitchen</h3>
+                                <p class="text-gray-300">Space-efficient design with smart storage</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Commercial Projects -->
-                <div class="gallery-item commercial bg-gray-900 rounded-xl overflow-hidden border border-red-900/30" onclick="openLightbox(8)">
+                <div class="gallery-item commercial bg-gray-900 rounded-xl overflow-hidden border border-red-900/30"
+                    onclick="openLightbox(8)">
                     <div><img class="rounded-lg w-full h-64" src="./hotel.png" alt="">
-                    <div class="overlay">
-                        <div class="text-white">
-                            <h3 class="text-xl font-semibold mb-2">Hotel Bathroom</h3>
-                            <p class="text-gray-300">5-star hotel bathroom installation</p>
-                        </div></div>
+                        <div class="overlay">
+                            <div class="text-white">
+                                <h3 class="text-xl font-semibold mb-2">Hotel Bathroom</h3>
+                                <p class="text-gray-300">5-star hotel bathroom installation</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item commercial bg-gray-900 rounded-xl overflow-hidden border border-red-900/30" onclick="openLightbox(9)">
+                <div class="gallery-item commercial bg-gray-900 rounded-xl overflow-hidden border border-red-900/30"
+                    onclick="openLightbox(9)">
                     <div><img class="rounded-lg w-full h-64" src="office.png" alt="">
-                    <div class="overlay">
-                        <div class="text-white">
-                            <h3 class="text-xl font-semibold mb-2">Office Restroom</h3>
-                            <p class="text-gray-300">Corporate office washroom design</p>
-                        </div></div>
+                        <div class="overlay">
+                            <div class="text-white">
+                                <h3 class="text-xl font-semibold mb-2">Office Restroom</h3>
+                                <p class="text-gray-300">Corporate office washroom design</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item commercial bg-gray-900 rounded-xl overflow-hidden border border-red-900/30" onclick="openLightbox(10)">
+                <div class="gallery-item commercial bg-gray-900 rounded-xl overflow-hidden border border-red-900/30"
+                    onclick="openLightbox(10)">
                     <div><img class="rounded-lg w-full h-64" src="restaurant.png" alt="">
-                    <div class="overlay">
-                        <div class="text-white">
-                            <h3 class="text-xl font-semibold mb-2">Restaurant Kitchen</h3>
-                            <p class="text-gray-300">Commercial kitchen with industrial fittings</p>
-                        </div></div>
+                        <div class="overlay">
+                            <div class="text-white">
+                                <h3 class="text-xl font-semibold mb-2">Restaurant Kitchen</h3>
+                                <p class="text-gray-300">Commercial kitchen with industrial fittings</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-item commercial bg-gray-900 rounded-xl overflow-hidden border border-red-900/30" onclick="openLightbox(11)">
+                <div class="gallery-item commercial bg-gray-900 rounded-xl overflow-hidden border border-red-900/30"
+                    onclick="openLightbox(11)">
                     <div><img class="rounded-lg w-full h-64" src="gym public.png" alt="">
-                    <div class="overlay">
-                        <div class="text-white">
-                            <h3 class="text-xl font-semibold mb-2">Gym Showers</h3>
-                            <p class="text-gray-300">Luxury Gym Washroom with premium fixtures</p>
-                        </div></div>
+                        <div class="overlay">
+                            <div class="text-white">
+                                <h3 class="text-xl font-semibold mb-2">Gym Showers</h3>
+                                <p class="text-gray-300">Luxury Gym Washroom with premium fixtures</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -386,14 +430,16 @@
         <div class="lightbox-content">
             <button class="lightbox-close" onclick="closeLightbox()">×</button>
             <button class="lightbox-nav lightbox-prev" onclick="prevImage()">‹</button>
-            <div class="w-full h-96 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center rounded-lg">
-                <img id="lightbox-image" class="w-full h-full max-height-[90vh] object-contain rounded-lg"/>
+            <div
+                class="w-full h-96 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center rounded-lg">
+                <img id="lightbox-image" class="w-full h-full max-height-[90vh] object-contain rounded-lg" />
 
             </div>
             <button class="lightbox-nav lightbox-next" onclick="nextImage()">›</button>
             <div class="text-center mt-4">
                 <h3 id="lightbox-title" class="text-2xl font-semibold text-white mb-2">Modern Master Bathroom</h3>
-                <p id="lightbox-description" class="text-gray-300">Luxury bathroom with premium fittings and smart features</p>
+                <p id="lightbox-description" class="text-gray-300">Luxury bathroom with premium fittings and smart
+                    features</p>
             </div>
         </div>
     </div>
@@ -404,13 +450,15 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <div class="text-2xl font-bold text-red-500 mb-4">Waterlife</div>
-                    <p class="text-gray-400 mb-4">Premium bathroom solutions for modern homes. Quality, innovation, and style in every product.</p>
+                    <p class="text-gray-400 mb-4">Premium bathroom solutions for modern homes. Quality, innovation, and
+                        style in every product.</p>
                 </div>
                 <div>
                     <h3 class="font-semibold mb-4">Products</h3>
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="./products.html" class="hover:text-red-400 transition-colors">Faucets</a></li>
-                        <li><a href="./products.html" class="hover:text-red-400 transition-colors">Shower Systems</a></li>
+                        <li><a href="./products.html" class="hover:text-red-400 transition-colors">Shower Systems</a>
+                        </li>
                         <li><a href="./products.html" class="hover:text-red-400 transition-colors">Accessories</a></li>
                     </ul>
                 </div>
@@ -466,16 +514,16 @@
         function filterGallery(category) {
             const items = document.querySelectorAll('.gallery-item');
             const buttons = document.querySelectorAll('.filter-btn');
-            
+
             // Update button states
             buttons.forEach(btn => {
                 btn.classList.remove('red-gradient');
                 btn.classList.add('bg-gray-800');
             });
-            
+
             event.target.classList.remove('bg-gray-800');
             event.target.classList.add('red-gradient');
-            
+
             // Filter items with animation
             items.forEach(item => {
                 if (category === 'all' || item.classList.contains(category)) {
@@ -523,7 +571,7 @@
         }
 
         // Keyboard navigation for lightbox
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (document.getElementById('lightbox').classList.contains('active')) {
                 if (e.key === 'Escape') {
                     closeLightbox();
@@ -536,14 +584,14 @@
         });
 
         // Close lightbox when clicking outside content
-        document.getElementById('lightbox').addEventListener('click', function(e) {
+        document.getElementById('lightbox').addEventListener('click', function (e) {
             if (e.target === this) {
                 closeLightbox();
             }
         });
 
         // Initialize animations
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
@@ -563,18 +611,16 @@
         });
 
         // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
+        document.addEventListener('click', function (event) {
             const mobileMenu = document.getElementById('mobile-menu');
             const menuButton = event.target.closest('button');
-            
+
             if (mobileMenu && !mobileMenu.contains(event.target) && !menuButton) {
                 mobileMenu.classList.add('hidden');
             }
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98e8601be6238ae1',t:'MTc2MDQ1ODUyNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'98e8601be6238ae1',t:'MTc2MDQ1ODUyNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
 </html>
-
-
-
-
