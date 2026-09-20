@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="icon" type="image" href="./favicon.png">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Waterlife" />
-<link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image" href="./faviconb.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Waterlife</title>
@@ -45,8 +40,15 @@
         }
 
         @keyframes slideIn {
-            from { transform: translateX(-100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
 
         .fade-in {
@@ -54,8 +56,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .scale-in {
@@ -63,8 +72,15 @@
         }
 
         @keyframes scaleIn {
-            from { transform: scale(0.8); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
         }
 
         .nav-link {
@@ -127,8 +143,8 @@
             pointer-events: none;
         }
 
-        .form-input:focus + .form-label,
-        .form-input:not(:placeholder-shown) + .form-label {
+        .form-input:focus+.form-label,
+        .form-input:not(:placeholder-shown)+.form-label {
             top: -0.5rem;
             left: 0.75rem;
             font-size: 0.75rem;
@@ -183,13 +199,14 @@
         }
     </style>
 </head>
+
 <body class="bg-black text-white">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-red-900/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                   <img class="h-16 w-48 center" src="./logo cut.png" alt="image" >
+                    <img class="h-16 w-48 center" src="./logo.png" alt="image">
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
@@ -198,13 +215,16 @@
                         <a href="./gallery.html" class="nav-link text-gray-300 hover:text-red-400">Gallery</a>
                         <a href="./about.html" class="nav-link text-gray-300 hover:text-red-400">About Us</a>
                         <a href="#" class="nav-link active text-white hover:text-red-400">Contact</a>
-                        <a href="./Waterlife_Catalogue (2).pdf" class="nav-link text-gray-300 hover:text-red-400">Download Catalogue</a>
+                        <a href="https://www.amazon.in/stores/PremiumBathroomCPFittings/page/0BA91826-1B20-4B0F-B825-0A4D9F143CFF?ip_asin=B0HGS5RBBJ&ref_=cm_sw_r_apann_ast_store_XFACAE5W7EF7NDD9KGWN"
+                            <a href="./Waterlife_Catalogue (2).pdf"
+                            class="nav-link text-gray-300 hover:text-red-400">Download Catalogue</a>
                     </div>
                 </div>
                 <div class="md:hidden">
                     <button onclick="toggleMobileMenu()" class="text-gray-300 hover:text-white">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
@@ -217,7 +237,8 @@
                 <a href="./gallery.html" class="block px-3 py-2 text-gray-300 hover:text-red-400">Gallery</a>
                 <a href="./about.html" class="block px-3 py-2 text-gray-300 hover:text-red-400">About Us</a>
                 <a href="#" class="block px-3 py-2 text-white hover:text-red-400">Contact</a>
-                <a href="./Waterlife_Catalogue (2).pdf" class="nav-link block px-3 py-2 text-gray-300 hover:text-red-400">Download Catalogue</a>
+                <a href="./Waterlife_Catalogue (2).pdf" class="nav-link text-gray-300 hover:text-red-400">Download
+                    Catalogue</a>
             </div>
         </div>
     </nav>
@@ -226,8 +247,10 @@
     <section class="py-20 gradient-bg pt-24">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h1 class="text-5xl md:text-6xl font-bold mb-6 slide-in">Get in <span class="text-red-500">Touch</span></h1>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto fade-in">Ready to transform your bathroom ? Our expert team is here to help you find the perfect solutions for your space.</p>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 slide-in">Get in <span class="text-red-500">Touch</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto fade-in">Ready to transform your bathroom ? Our expert
+                    team is here to help you find the perfect solutions for your space.</p>
             </div>
         </div>
     </section>
@@ -236,12 +259,13 @@
     <section class="py-20 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-16">How Can We <span class="text-red-500">Help</span>?</h2>
-            
+
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="contact-card bg-gray-800 rounded-xl p-6 text-center border border-red-900/30">
                     <div class="w-16 h-16 red-gradient rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Call Us</h3>
@@ -249,11 +273,12 @@
                     <p class="text-red-500 font-semibold">+91 98715 20140</p>
                     <p class="text-sm text-gray-400 mt-2">Mon-Fri: 9AM-6PM</p>
                 </div>
-                
+
                 <div class="contact-card bg-gray-800 rounded-xl p-6 text-center border border-red-900/30">
                     <div class="w-16 h-16 red-gradient rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Email Us</h3>
@@ -261,23 +286,27 @@
                     <p class="text-red-500 font-semibold text-center">waterlifecustomercare@gmail.com</p>
                     <p class="text-sm text-gray-400 mt-2">24/7 Response</p>
                 </div>
-                
+
                 <div class="contact-card bg-gray-800 rounded-xl p-6 text-center border border-red-900/30">
                     <div class="w-16 h-16 red-gradient rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+                            <path
+                                d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Live Chat</h3>
                     <p class="text-gray-300 mb-4">Instant support online</p>
-                    <a href=" https://wa.me/message/GTCTXOOHS2XDD1"><button class="text-red-500 font-semibold hover:text-red-400 transition-colors">Start Chat</button></a>
+                    <a href=" https://wa.me/message/GTCTXOOHS2XDD1"><button
+                            class="text-red-500 font-semibold hover:text-red-400 transition-colors">Start
+                            Chat</button></a>
                     <p class="text-sm text-gray-400 mt-2">Available Now</p>
                 </div>
-                
+
                 <div class="contact-card bg-gray-800 rounded-xl p-6 text-center border border-red-900/30">
                     <div class="w-16 h-16 red-gradient rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-3">Visit Us</h3>
@@ -296,36 +325,39 @@
                 <!-- Contact Form -->
                 <div class="fade-in">
                     <h2 class="text-3xl font-bold mb-8">Send Us a <span class="text-red-500">Message</span></h2>
-                    
+
                     <div id="success-message" class="success-message">
                         <p>Thank you for your message! We'll get back to you within 24 hours.</p>
                     </div>
-                    
-                    <form  action="https://formspree.io/f/xjkjzlwr" method="post" id="contact-form" class="space-y-6" accept-charset="UTF-8">
+
+                    <form action="https://formspree.io/f/xjkjzlwr" method="post" id="contact-form" class="space-y-6"
+                        accept-charset="UTF-8">
                         <div class="grid md:grid-cols-2 gap-6">
                             <div class="form-group">
-                                <input type="text" id="firstName" name="firstName" class="form-input" placeholder=" " required>
+                                <input type="text" id="firstName" name="firstName" class="form-input" placeholder=" "
+                                    required>
                                 <label for="firstName" class="form-label">First Name</label>
                                 <div class="error-message" id="firstName-error">Please enter your first name</div>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="lastName" name="lastName" class="form-input" placeholder=" " required>
+                                <input type="text" id="lastName" name="lastName" class="form-input" placeholder=" "
+                                    required>
                                 <label for="lastName" class="form-label">Last Name</label>
                                 <div class="error-message" id="lastName-error">Please enter your last name</div>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
                             <label for="email" class="form-label">Email Address</label>
                             <div class="error-message" id="email-error">Please enter a valid email address</div>
                         </div>
-                        
+
                         <div class="form-group">
                             <input type="tel" id="phone" name="phone" class="form-input" placeholder=" ">
                             <label for="phone" class="form-label">Phone Number (Optional)</label>
                         </div>
-                        
+
                         <div class="form-group">
                             <select id="subject" name="subject" class="form-input" required>
                                 <option value="">Select Subject</option>
@@ -337,25 +369,27 @@
                             </select>
                             <div class="error-message" id="subject-error">Please select a subject</div>
                         </div>
-                        
+
                         <div class="form-group">
-                            <textarea id="message" name="message" rows="5" class="form-input" placeholder=" " required></textarea>
+                            <textarea id="message" name="message" rows="5" class="form-input" placeholder=" "
+                                required></textarea>
                             <label for="message" class="form-label">Your Message</label>
                             <div class="error-message" id="message-error">Please enter your message</div>
                         </div>
-                        
-                        
-                        
-                        <button type="submit" class="w-full red-gradient py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all">
+
+
+
+                        <button type="submit"
+                            class="w-full red-gradient py-3 px-6 rounded-lg font-semibold hover:shadow-lg transition-all">
                             Send Message
                         </button>
                     </form>
                 </div>
-                
+
                 <!-- Contact Information -->
                 <div class="scale-in">
                     <h2 class="text-3xl font-bold mb-8">Our <span class="text-red-500">Locations</span></h2>
-                    
+
                     <div class="space-y-8">
                         <!-- Headquarters -->
                         <div class="bg-gray-900 rounded-xl p-6 border border-red-900/30">
@@ -363,7 +397,8 @@
                             <div class="space-y-3">
                                 <div class="flex items-start">
                                     <svg class="w-5 h-5 text-red-500 mt-1 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                                     </svg>
                                     <div>
                                         <p class="text-white">B-5/287, Yamuna Vihar</p>
@@ -372,13 +407,15 @@
                                 </div>
                                 <div class="flex items-center">
                                     <svg class="w-5 h-5 text-red-500 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                        <path
+                                            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                                     </svg>
                                     <p class="text-gray-300">+91 98715 20140</p>
                                 </div>
                                 <div class="flex items-center">
                                     <svg class="w-5 h-5 text-red-500 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                                     </svg>
                                     <div>
                                         <p class="text-gray-300">Mon-Fri: 9:00 AM - 6:00 PM</p>
@@ -387,14 +424,15 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Showroom 1 -->
                         <div class="bg-gray-900 rounded-xl p-6 border border-red-900/30">
                             <h3 class="text-xl font-bold mb-4 text-red-500">Industrial Unit:</h3>
                             <div class="space-y-3">
                                 <div class="flex items-start">
                                     <svg class="w-5 h-5 text-red-500 mt-1 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                                     </svg>
                                     <div>
                                         <p class="text-white">B-6, Gokulpuri</p>
@@ -403,20 +441,22 @@
                                 </div>
                                 <div class="flex items-center">
                                     <svg class="w-5 h-5 text-red-500 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                        <path
+                                            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                                     </svg>
                                     <p class="text-gray-300">+91 87002 76329</p>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Showroom 2 -->
                         <div class="bg-gray-900 rounded-xl p-6 border border-red-900/30">
                             <h3 class="text-xl font-bold mb-4 text-red-500">Our Presence:</h3>
                             <div class="space-y-3">
                                 <div class="flex items-start">
                                     <svg class="w-5 h-5 text-red-500 mt-1 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                                     </svg>
                                     <div>
                                         <p class="text-white-500 font-bold">Delhi</p>
@@ -424,7 +464,8 @@
                                 </div>
                                 <div class="flex items-start">
                                     <svg class="w-5 h-5 text-red-500 mt-1 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                                     </svg>
                                     <div>
                                         <p class="text-white-500 font-bold">Hyderabad</p>
@@ -432,7 +473,8 @@
                                 </div>
                                 <div class="flex items-start">
                                     <svg class="w-5 h-5 text-red-500 mt-1 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                                     </svg>
                                     <div>
                                         <p class="text-white-500 font-bold">Bangalore</p>
@@ -440,7 +482,8 @@
                                 </div>
                                 <div class="flex items-start">
                                     <svg class="w-5 h-5 text-red-500 mt-1 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                                     </svg>
                                     <div>
                                         <p class="text-white-500 font-bold">Kerala</p>
@@ -448,7 +491,8 @@
                                 </div>
                                 <div class="flex items-start">
                                     <svg class="w-5 h-5 text-red-500 mt-1 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                                     </svg>
                                     <div>
                                         <p class="text-white-500 font-bold">Aurangabad</p>
@@ -456,73 +500,84 @@
                                 </div>
                                 <div class="flex items-start">
                                     <svg class="w-5 h-5 text-red-500 mt-1 mr-3" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                        <path
+                                            d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                                     </svg>
                                     <div>
                                         <p class="text-white-500 font-bold">Asansol</p>
                                     </div>
                                 </div>
-                                
+
+                            </div>
                         </div>
-                    </div>
-                    
-                    <!-- Map Placeholder -->
-           <div class="map-placeholder" >
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.704923671076!2d77.2667326753381!3d28.698472175628762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfdefd76d4121%3A0xc91993b4f60d4236!2sWaterlife!5e0!3m2!1sen!2sin!4v1762016016904!5m2!1sen!2sin" width="595" height="290" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           </div>              
+
+                        <!-- Map Placeholder -->
+                        <div class="map-placeholder">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.704923671076!2d77.2667326753381!3d28.698472175628762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfdefd76d4121%3A0xc91993b4f60d4236!2sWaterlife!5e0!3m2!1sen!2sin!4v1762016016904!5m2!1sen!2sin"
+                                width="595" height="290" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
     </section>
 
     <!-- FAQ Section -->
     <section class="py-20 bg-gray-900">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16">Frequently Asked <span class="text-red-500">Questions</span></h2>
-            
+            <h2 class="text-4xl font-bold text-center mb-16">Frequently Asked <span
+                    class="text-red-500">Questions</span></h2>
+
             <div class="space-y-4">
                 <div class="faq-item">
                     <div class="faq-question py-4 flex justify-between items-center" onclick="toggleFAQ(0)">
                         <h3 class="text-lg font-semibold">What is your warranty policy?</h3>
                         <svg class="w-5 h-5 transform transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
                         </svg>
                     </div>
                     <div class="faq-answer pb-4">
-                        <p class="text-gray-300">We offer a comprehensive 10-year warranty on all our premium bathroom fittings, covering manufacturing defects and normal wear.</p>
+                        <p class="text-gray-300">We offer a comprehensive 10-year warranty on all our premium bathroom
+                            fittings, covering manufacturing defects and normal wear.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <div class="faq-question py-4 flex justify-between items-center" onclick="toggleFAQ(1)">
                         <h3 class="text-lg font-semibold">How long does delivery take?</h3>
                         <svg class="w-5 h-5 transform transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
                         </svg>
                     </div>
                     <div class="faq-answer pb-4">
-                        <p class="text-gray-300">Standard delivery takes Upto 8 business days after the order is confirmed.</p>
+                        <p class="text-gray-300">Standard delivery takes Upto 8 business days after the order is
+                            confirmed.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <div class="faq-question py-4 flex justify-between items-center" onclick="toggleFAQ(2)">
                         <h3 class="text-lg font-semibold">Can I return products if I'm not satisfied?</h3>
                         <svg class="w-5 h-5 transform transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
                         </svg>
                     </div>
                     <div class="faq-answer pb-4">
-                        <p class="text-gray-300">We offer a 7-day return policy for unused products in original packaging. Custom or installed items may have different return conditions. Please contact our customer service team to initiate a return.</p>
+                        <p class="text-gray-300">We offer a 7-day return policy for unused products in original
+                            packaging. Custom or installed items may have different return conditions. Please contact
+                            our customer service team to initiate a return.</p>
                     </div>
                 </div>
-                
+
                 <div class="faq-item">
                     <div class="faq-question py-4 flex justify-between items-center" onclick="toggleFAQ(3)">
                         <h3 class="text-lg font-semibold">Do you offer bulk pricing for contractors?</h3>
                         <svg class="w-5 h-5 transform transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
                         </svg>
                     </div>
                     <div class="faq-answer pb-4">
-                        <p class="text-gray-300">Yes, we have special pricing programs for contractors, builders, and designers. Contact our business development team to learn about volume discounts, trade accounts, and exclusive contractor benefits.</p>
+                        <p class="text-gray-300">Yes, we have special pricing programs for contractors, builders, and
+                            designers. Contact our business development team to learn about volume discounts, trade
+                            accounts, and exclusive contractor benefits.</p>
                     </div>
                 </div>
 
@@ -530,7 +585,7 @@
                     <div class="faq-question py-4 flex justify-between items-center" onclick="toggleFAQ(4)">
                         <h3 class="text-lg font-semibold">Who is responsible for transport charges?</h3>
                         <svg class="w-5 h-5 transform transition-transform" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                            <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
                         </svg>
                     </div>
                     <div class="faq-answer pb-4">
@@ -545,15 +600,16 @@
     <section class="py-20 gradient-bg">
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-4xl font-bold mb-8">Stay <span class="text-red-500">Connected</span></h2>
-            
-            
+
+
             <div class="bg-gray-900 rounded-xl p-8 border border-red-900/30">
                 <h3 class="text-2xl font-bold mb-4">Need Immediate Assistance?</h3>
                 <p class="text-gray-300 mb-6">Our customer support team is available 24/7 for urgent inquiries.</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href=" https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all">
-                        Emergency Support
-                    </button>
+                    <a href=" https://wa.me/message/GTCTXOOHS2XDD1"><button
+                            class="red-gradient px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all">
+                            Emergency Support
+                        </button>
                     </a>
                 </div>
             </div>
@@ -566,13 +622,15 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <div class="text-2xl font-bold text-red-500 mb-4">Waterlife</div>
-                    <p class="text-gray-400 mb-4">Premium bathroom solutions for modern homes. Quality, innovation, and style in every product.</p>
+                    <p class="text-gray-400 mb-4">Premium bathroom solutions for modern homes. Quality, innovation, and
+                        style in every product.</p>
                 </div>
                 <div>
                     <h3 class="font-semibold mb-4">Products</h3>
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="./products.html" class="hover:text-red-400 transition-colors">Faucets</a></li>
-                        <li><a href="./products.html" class="hover:text-red-400 transition-colors">Shower Systems</a></li>
+                        <li><a href="./products.html" class="hover:text-red-400 transition-colors">Shower Systems</a>
+                        </li>
                         <li><a href="./products.html" class="hover:text-red-400 transition-colors">Accessories</a></li>
                     </ul>
                 </div>
@@ -607,29 +665,29 @@
         }
 
         // Form Validation and Submission
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
             e();
-            
+
             // Reset previous errors
             document.querySelectorAll('.error-message').forEach(error => {
                 error.style.display = 'none';
             });
-            
+
             let isValid = true;
-            
+
             // Validate required fields
             const requiredFields = ['firstName', 'lastName', 'email', 'subject', 'message'];
-            
+
             requiredFields.forEach(fieldId => {
                 const field = document.getElementById(fieldId);
                 const errorElement = document.getElementById(fieldId + '-error');
-                
+
                 if (!field.value.trim()) {
                     errorElement.style.display = 'block';
                     isValid = false;
                 }
             });
-            
+
             // Validate email format
             const email = document.getElementById('email');
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -638,19 +696,19 @@
                 document.getElementById('email-error').style.display = 'block';
                 isValid = false;
             }
-            
+
             if (isValid) {
                 // Show success message
                 document.getElementById('success-message').style.display = 'block';
-                
+
                 // Reset form
                 this.reset();
-                
+
                 // Hide success message after 5 seconds
                 setTimeout(() => {
                     document.getElementById('success-message').style.display = 'none';
                 }, 5000);
-                
+
                 // Scroll to success message
                 document.getElementById('success-message').scrollIntoView({
                     behavior: 'smooth',
@@ -665,7 +723,7 @@
             const currentItem = faqItems[index];
             const answer = currentItem.querySelector('.faq-answer');
             const icon = currentItem.querySelector('svg');
-            
+
             // Close all other FAQs
             faqItems.forEach((item, i) => {
                 if (i !== index) {
@@ -673,7 +731,7 @@
                     item.querySelector('svg').style.transform = 'rotate(0deg)';
                 }
             });
-            
+
             // Toggle current FAQ
             if (answer.classList.contains('active')) {
                 answer.classList.remove('active');
@@ -685,7 +743,7 @@
         }
 
         // Intersection Observer for animations
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
@@ -706,17 +764,17 @@
         });
 
         // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
+        document.addEventListener('click', function (event) {
             const mobileMenu = document.getElementById('mobile-menu');
             const menuButton = event.target.closest('button');
-            
+
             if (mobileMenu && !mobileMenu.contains(event.target) && !menuButton) {
                 mobileMenu.classList.add('hidden');
             }
         });
 
         // Add scroll effect to navigation
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
                 nav.classList.add('bg-black');
@@ -729,21 +787,19 @@
 
         // Form input animations
         document.querySelectorAll('.form-input').forEach(input => {
-            input.addEventListener('focus', function() {
+            input.addEventListener('focus', function () {
                 this.parentElement.classList.add('focused');
             });
-            
-            input.addEventListener('blur', function() {
+
+            input.addEventListener('blur', function () {
                 if (!this.value) {
                     this.parentElement.classList.remove('focused');
                 }
             });
         });
-        
+
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98e889cde2a4d8a9',t:'MTc2MDQ2MDIzNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'98e889cde2a4d8a9',t:'MTc2MDQ2MDIzNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
 </html>
-
-
-
-
