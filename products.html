@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="icon" type="image" href="./favicon.png">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Waterlife" />
-<link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image" href="./faviconb.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - Waterlife</title>
@@ -45,8 +40,15 @@
         }
 
         @keyframes slideIn {
-            from { transform: translateX(-100%); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
 
         .fade-in {
@@ -54,8 +56,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .product-card {
@@ -101,13 +110,14 @@
         }
     </style>
 </head>
+
 <body class="bg-black text-white">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-red-900/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <img class="h-16 w-48 center" src="./logo cut.png" alt="image" >
+                    <img class="h-16 w-48 center" src="./logo.png" alt="image">
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
@@ -116,13 +126,16 @@
                         <a href="./gallery.html" class="nav-link text-gray-300 hover:text-red-400">Gallery</a>
                         <a href="./about.html" class="nav-link text-gray-300 hover:text-red-400">About Us</a>
                         <a href="./contact.html" class="nav-link text-gray-300 hover:text-red-400">Contact</a>
-                        <a href="./Waterlife_Catalogue (2).pdf" class="nav-link text-gray-300 hover:text-red-400">Download Catalogue</a>
+                        <a href="https://www.amazon.in/stores/PremiumBathroomCPFittings/page/0BA91826-1B20-4B0F-B825-0A4D9F143CFF?ip_asin=B0HGS5RBBJ&ref_=cm_sw_r_apann_ast_store_XFACAE5W7EF7NDD9KGWN"
+                            <a href="./Waterlife_Catalogue (2).pdf"
+                            class="nav-link text-gray-300 hover:text-red-400">Download Catalogue</a>
                     </div>
                 </div>
                 <div class="md:hidden">
                     <button onclick="toggleMobileMenu()" class="text-gray-300 hover:text-white">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
@@ -135,7 +148,8 @@
                 <a href="./gallery.html" class="block px-3 py-2 text-gray-300 hover:text-red-400">Gallery</a>
                 <a href="./about.html" class="block px-3 py-2 text-gray-300 hover:text-red-400">About Us</a>
                 <a href="./contact.html" class="block px-3 py-2 text-gray-300 hover:text-red-400">Contact</a>
-                <a href="./Waterlife_Catalogue (2).pdf" class="nav-link block px-3 py-2 text-gray-300 hover:text-red-400">Download Catalogue</a>
+                <a href="./Waterlife_Catalogue (2).pdf" class="nav-link text-gray-300 hover:text-red-400">Download
+                    Catalogue</a>
             </div>
         </div>
     </nav>
@@ -143,1090 +157,1498 @@
     <!-- Products Section -->
     <section class="py-20 gradient-bg pt-24">
         <div class="max-w-7xl mx-auto px-4">
-            <h1 class="text-5xl font-bold text-center mb-12 slide-in">Our <span class="text-red-500">Products</span></h1>
-            
+            <h1 class="text-5xl font-bold text-center mb-12 slide-in">Our <span class="text-red-500">Products</span>
+            </h1>
+
             <!-- Product Categories -->
             <div class="flex flex-wrap justify-center gap-4 mb-12">
-                <button onclick="filterProducts('all')" class="filter-btn red-gradient px-6 py-3 rounded-lg font-semibold transition-all ">All Products</button>
-                <button onclick="filterProducts('florentine')" class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Florentine Series</button>
-                <button onclick="filterProducts('fusion')" class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Fusion Series</button>
-                <button onclick="filterProducts('karbon')" class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Karbon Series</button>
-                <button onclick="filterProducts('aria')" class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Aria Series</button>
-                <button onclick="filterProducts('ornamax')" class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Ornamax Series</button>
-                <button onclick="filterProducts('ds')" class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Diverter & Spouts</button>
-                <button onclick="filterProducts('shower')" class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Showers</button>
-                <button onclick="filterProducts('acc')" class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Health Faucets</button>
+                <button onclick="filterProducts('all')"
+                    class="filter-btn red-gradient px-6 py-3 rounded-lg font-semibold transition-all ">All
+                    Products</button>
+                <button onclick="filterProducts('florentine')"
+                    class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Florentine
+                    Series</button>
+                <button onclick="filterProducts('fusion')"
+                    class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Fusion
+                    Series</button>
+                <button onclick="filterProducts('karbon')"
+                    class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Karbon
+                    Series</button>
+                <button onclick="filterProducts('aria')"
+                    class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Aria
+                    Series</button>
+                <button onclick="filterProducts('ornamax')"
+                    class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Ornamax
+                    Series</button>
+                <button onclick="filterProducts('ds')"
+                    class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Diverter
+                    & Spouts</button>
+                <button onclick="filterProducts('shower')"
+                    class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Showers</button>
+                <button onclick="filterProducts('acc')"
+                    class="filter-btn bg-gray-800 hover:bg-red-600 px-6 py-3 rounded-lg font-semibold transition-all">Accessories</button>
             </div>
 
             <!-- Products Grid -->
             <div id="products-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Faucets -->
-                 <!-- Florentine -->
+                <!-- Florentine -->
                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
-                    <div><img class="rounded-lg h-full w-full" src="./florentine center hole basin mixer rem..png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 01</span> Center Hole Basin Mixer</h3>
-                    <p class="text-gray-400 mb-4">Elegant design for perfect basin mixing.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                    <div><img class="rounded-lg h-full w-full" src="./florentine center hole basin mixer rem..png"
+                            alt="">
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 01</span> Center Hole
+                            Basin Mixer</h3>
+                        <p class="text-gray-400 mb-4">Elegant design for perfect basin mixing.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
-          
+
                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./single lever florentine.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 02</span> Single Lever Basin Mixer </h3>
-                    <p class="text-gray-400 mb-4">One-touch comfort for modern bathrooms.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 02</span> Single Lever
+                            Basin Mixer </h3>
+                        <p class="text-gray-400 mb-4">One-touch comfort for modern bathrooms.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg h-full w-full" src="./sink mixer florentine.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 03</span> Sink Mixer</h3>
-                    <p class="text-gray-400 mb-4">Perfect blend of style and temperature.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 03</span> Sink Mixer</h3>
+                        <p class="text-gray-400 mb-4">Perfect blend of style and temperature.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg h-full w-full" src="./Wall mixer non-telephonic.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 04</span> Wall Mixer Non-Telephonic</h3>
-                    <p class="text-gray-400 mb-4">Smooth wall-mounted mixing with timeless style.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 04</span> Wall Mixer
+                            Non-Telephonic</h3>
+                        <p class="text-gray-400 mb-4">Smooth wall-mounted mixing with timeless style.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="product-item florentine ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
+                <div
+                    class="product-item florentine ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg h-full w-full" src="./Diverter With Spout Florentine.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 05</span> Diverter With Spout</h3>
-                    <p class="text-gray-400 mb-4">Florentine design for smooth dual water control.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 05</span> Diverter With
+                            Spout</h3>
+                        <p class="text-gray-400 mb-4">Florentine design for smooth dual water control.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
-                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
+                <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./PILLAR cock florentine.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 06</span> Pillar Cock</h3>
-                    <p class="text-gray-400 mb-4">Tall elegance crafted for premium spaces.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 06</span> Pillar Cock
+                        </h3>
+                        <p class="text-gray-400 mb-4">Tall elegance crafted for premium spaces.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg h-full w-full" src="./bib cock florentine.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 07</span> Bib Cock</h3>
-                    <p class="text-gray-400 mb-4">Classic beauty with reliable everyday flow.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 07</span> Bib Cock</h3>
+                        <p class="text-gray-400 mb-4">Classic beauty with reliable everyday flow.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg h-full w-full" src="./long body florentine.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 08</span> Long Body</h3>
-                    <p class="text-gray-400 mb-4">Extended body for extended convenience.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                       <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 08</span> Long Body</h3>
+                        <p class="text-gray-400 mb-4">Extended body for extended convenience.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg  bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./angle cock florentine.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 09</span> Angle Cock</h3>
-                    <p class="text-gray-400 mb-4">Stylish control for bathroom perfection.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 09</span> Angle Cock</h3>
+                        <p class="text-gray-400 mb-4">Stylish control for bathroom perfection.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./florentine long pillar cock.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 10</span> Pillar Cock Long</h3>
-                    <p class="text-gray-400 mb-4">Premium height crafted for refined performance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 10</span> Pillar Cock
+                            Long</h3>
+                        <p class="text-gray-400 mb-4">Premium height crafted for refined performance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item florentineproduct-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./concealed stop cock florentine.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 11</span> Concealed Stop Cock</h3>
-                    <p class="text-gray-400 mb-4">Elegant concealed stop for premium bathrooms.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 11</span> Concealed Stop
+                            Cock</h3>
+                        <p class="text-gray-400 mb-4">Elegant concealed stop for premium bathrooms.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="product-item florentine ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
+                <div
+                    class="product-item florentine ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Diverter florentine.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 12</span> Diverter</h3>
-                    <p class="text-gray-400 mb-4">Florentine design for perfect water switching.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 12</span> Diverter</h3>
+                        <p class="text-gray-400 mb-4">Florentine design for perfect water switching.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./sink cock florentine.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 13</span> Sink Cock</h3>
-                    <p class="text-gray-400 mb-4">Smooth movement for effortless washing.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 13</span> Sink Cock</h3>
+                        <p class="text-gray-400 mb-4">Smooth movement for effortless washing.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="swan neck florentine.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 14</span> Swan Neck</h3>
-                    <p class="text-gray-400 mb-4">Elegant curves for modern kitchens.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 14</span> Swan Neck</h3>
+                        <p class="text-gray-400 mb-4">Elegant curves for modern kitchens.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./wall mixer telephonic florentine (2).png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 15</span> Wall Mixer Telephonic</h3>
-                    <p class="text-gray-400 mb-4">Premium shower control with flawless flow.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 15</span> Wall Mixer
+                            Telephonic</h3>
+                        <p class="text-gray-400 mb-4">Premium shower control with flawless flow.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item florentine product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./bib cokc 2 in1 florentine.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 16</span> Bib Cock 2x1</h3>
-                    <p class="text-gray-400 mb-4">Dual function with superior Florentine finesse.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 16</span> Bib Cock 2x1
+                        </h3>
+                        <p class="text-gray-400 mb-4">Dual function with superior Florentine finesse.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Fusion -->
                 <div class=" product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./center hole basin mixer fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 01</span> Center Hole Basin Mixer</h3>
-                    <p class="text-gray-400 mb-4">Strong build blended with modern beauty.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                       <a href="https://wa.me/message/GTCTXOOHS2XDD1"> <button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 01</span> Center Hole
+                            Basin Mixer</h3>
+                        <p class="text-gray-400 mb-4">Strong build blended with modern beauty.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"> <button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./sink cock fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 02</span> Sink Cock</h3>
-                    <p class="text-gray-400 mb-4">Effortless rotation with stylish performance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 02</span> Sink Cock</h3>
+                        <p class="text-gray-400 mb-4">Effortless rotation with stylish performance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./swan neck fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 03</span> Swan Neck</h3>
-                    <p class="text-gray-400 mb-4">Curved beauty crafted for kitchens.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 03</span> Swan Neck</h3>
+                        <p class="text-gray-400 mb-4">Curved beauty crafted for kitchens.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./sink mixer fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 04</span> Sink Mixer</h3>
-                    <p class="text-gray-400 mb-4">Fusion of hot, cold, and elegance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 04</span> Sink Mixer</h3>
+                        <p class="text-gray-400 mb-4">Fusion of hot, cold, and elegance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./pillar cock fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 05</span> Pillar Cock</h3>
-                    <p class="text-gray-400 mb-4">Fusion height with striking finish</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 05</span> Pillar Cock
+                        </h3>
+                        <p class="text-gray-400 mb-4">Fusion height with striking finish</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./bib cock fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 06</span> Bib Cock</h3>
-                    <p class="text-gray-400 mb-4">Strong build blended with modern beauty.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                       <a href="https://wa.me/message/GTCTXOOHS2XDD1"> <button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 06</span> Bib Cock</h3>
+                        <p class="text-gray-400 mb-4">Strong build blended with modern beauty.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"> <button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./long body fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 07</span> Long Body</h3>
-                    <p class="text-gray-400 mb-4">Extended fusion style for superior flow.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 07</span> Long Body</h3>
+                        <p class="text-gray-400 mb-4">Extended fusion style for superior flow.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./angle cock fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 08</span> Angle Cock</h3>
-                    <p class="text-gray-400 mb-4">Modern control with fusion elegance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 08</span> Angle Cock</h3>
+                        <p class="text-gray-400 mb-4">Modern control with fusion elegance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./single lever basin mixer fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 09</span> Single Lever Basin Mixer</h3>
-                    <p class="text-gray-400 mb-4">Precision mixing with sleek Fusion design.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 09</span> Single Lever
+                            Basin Mixer</h3>
+                        <p class="text-gray-400 mb-4">Precision mixing with sleek Fusion design.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./2x1 bib cock fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 10</span> 2x1 Bib Cock Fusion</h3>
-                    <p class="text-gray-400 mb-4">Two-in-one convenience in Fusion style.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 10</span> 2x1 Bib Cock
+                            Fusion</h3>
+                        <p class="text-gray-400 mb-4">Two-in-one convenience in Fusion style.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./concealed stop cock fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 11</span> Concealed Stop Cock</h3>
-                    <p class="text-gray-400 mb-4">Hidden fusion engineering for longevity.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 11</span> Concealed Stop
+                            Cock</h3>
+                        <p class="text-gray-400 mb-4">Hidden fusion engineering for longevity.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./diverter fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 12</span> Diverter</h3>
-                    <p class="text-gray-400 mb-4">Smooth switching with fusion precision.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 12</span> Diverter</h3>
+                        <p class="text-gray-400 mb-4">Smooth switching with fusion precision.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./wall mixer telephonic fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 13</span> Wall Mixer Telephonic</h3>
-                    <p class="text-gray-400 mb-4">Smooth switching with fusion precision.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 13</span> Wall Mixer
+                            Telephonic</h3>
+                        <p class="text-gray-400 mb-4">Smooth switching with fusion precision.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./angle cock 2 in 1 fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 14</span> Angle Cock 2x1</h3>
-                    <p class="text-gray-400 mb-4">Dual-mode performance in fusion style.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 14</span> Angle Cock 2x1
+                        </h3>
+                        <p class="text-gray-400 mb-4">Dual-mode performance in fusion style.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./washing bib cock fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 15</span> Washing Machine Bib Cock</h3>
-                    <p class="text-gray-400 mb-4">Fusion strength for washing needs.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 15</span> Washing Machine
+                            Bib Cock</h3>
+                        <p class="text-gray-400 mb-4">Fusion strength for washing needs.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./nozzle bib cock fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 16</span> Nozzle Bib Cock</h3>
-                    <p class="text-gray-400 mb-4">Focused flow with durable design.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 16</span> Nozzle Bib Cock
+                        </h3>
+                        <p class="text-gray-400 mb-4">Focused flow with durable design.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./plain spout fusion.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 17</span> Plain Spout</h3>
-                    <p class="text-gray-400 mb-4">Clean design with steady water flow.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 17</span> Plain Spout
+                        </h3>
+                        <p class="text-gray-400 mb-4">Clean design with steady water flow.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Karbon -->
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./center hole basin mixer karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 01</span> Center Hole Basin Mixer</h3>
-                    <p class="text-gray-400 mb-4">Karbon strength with perfect center mixing control.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 01</span> Center Hole
+                            Basin Mixer</h3>
+                        <p class="text-gray-400 mb-4">Karbon strength with perfect center mixing control.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./pillar cock long karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 02</span> Pillar Cock Long</h3>
-                    <p class="text-gray-400 mb-4">Long design crafted for heavy use.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 02</span> Pillar Cock
+                            Long</h3>
+                        <p class="text-gray-400 mb-4">Long design crafted for heavy use.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./sink cock karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 03</span> Sink Cock</h3>
-                    <p class="text-gray-400 mb-4">Smooth rotation for kitchen convenience.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 03</span> Sink Cock</h3>
+                        <p class="text-gray-400 mb-4">Smooth rotation for kitchen convenience.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./swan neck karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 04</span> Swan Neck</h3>
-                    <p class="text-gray-400 mb-4">Elegant swan curve with durable Karbon strength.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 04</span> Swan Neck</h3>
+                        <p class="text-gray-400 mb-4">Elegant swan curve with durable Karbon strength.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./sink mixer karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 05</span> Sink Mixer</h3>
-                    <p class="text-gray-400 mb-4">Reliable mixer crafted for perfect sink control.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 05</span> Sink Mixer</h3>
+                        <p class="text-gray-400 mb-4">Reliable mixer crafted for perfect sink control.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./pillar cock karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 06</span> Pillar Cock</h3>
-                    <p class="text-gray-400 mb-4">Sturdy design with premium performance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 06</span> Pillar Cock
+                        </h3>
+                        <p class="text-gray-400 mb-4">Sturdy design with premium performance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./bib cock karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 07</span> Bib Cock</h3>
-                    <p class="text-gray-400 mb-4">Built tough for everyday durability.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 07</span> Bib Cock</h3>
+                        <p class="text-gray-400 mb-4">Built tough for everyday durability.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./long body karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 08</span> Long Body</h3>
-                    <p class="text-gray-400 mb-4">Extended strength for superior flow.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 08</span> Long Body</h3>
+                        <p class="text-gray-400 mb-4">Extended strength for superior flow.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Angle cock karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 09</span> Angle Cock</h3>
-                    <p class="text-gray-400 mb-4">Strong control with Karbon reliability.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 09</span> Angle Cock</h3>
+                        <p class="text-gray-400 mb-4">Strong control with Karbon reliability.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./bib cock 2 in 1 karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 10</span> Bib Cock 2x1</h3>
-                    <p class="text-gray-400 mb-4">Dual utility with Karbon strength.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 10</span> Bib Cock 2x1
+                        </h3>
+                        <p class="text-gray-400 mb-4">Dual utility with Karbon strength.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./angle cock 2 in 1 karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 11</span> Angle Cock 2x1</h3>
-                    <p class="text-gray-400 mb-4">Two-way flow with tough control.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 11</span> Angle Cock 2x1
+                        </h3>
+                        <p class="text-gray-400 mb-4">Two-way flow with tough control.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./concealed stop cock karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 12</span> Concealed Stop Cock</h3>
-                    <p class="text-gray-400 mb-4">Hidden performance engineered for longevity.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 12</span> Concealed Stop
+                            Cock</h3>
+                        <p class="text-gray-400 mb-4">Hidden performance engineered for longevity.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./washing machine bib cock karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 13</span> Washing Machine Bib Cock</h3>
-                    <p class="text-gray-400 mb-4">High-pressure output for machines.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 13</span> Washing Machine
+                            Bib Cock</h3>
+                        <p class="text-gray-400 mb-4">High-pressure output for machines.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./wall mixer telephonic karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 14</span> Wall Mixer Telephonic</h3>
-                    <p class="text-gray-400 mb-4">Advanced mixing with durable Karbon build.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 14</span> Wall Mixer
+                            Telephonic</h3>
+                        <p class="text-gray-400 mb-4">Advanced mixing with durable Karbon build.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item karbon product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./wall mixer 3x1 karbon.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 15</span> Wall Mixer Telephonic 3x1</h3>
-                    <p class="text-gray-400 mb-4">Versatile 3×1 mixer built with Karbon durability.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">KR - 15</span> Wall Mixer
+                            Telephonic 3x1</h3>
+                        <p class="text-gray-400 mb-4">Versatile 3×1 mixer built with Karbon durability.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Ornamax -->
                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./center hole basin mixer ornamax.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 01</span> Center Hole Basin Mixer</h3>
-                    <p class="text-gray-400 mb-4">Seamless water mixing with elegant center design.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class=" red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 01</span> Center Hole
+                            Basin Mixer</h3>
+                        <p class="text-gray-400 mb-4">Seamless water mixing with elegant center design.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class=" red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./pillar cock long ornamax.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 02</span> Pillar Cock Long</h3>
-                    <p class="text-gray-400 mb-4">Tall. Sleek. Made to Impress.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class=" red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 02</span> Pillar Cock
+                            Long</h3>
+                        <p class="text-gray-400 mb-4">Tall. Sleek. Made to Impress.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class=" red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./sink cock ornamax.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 03</span> Sink Cock</h3>
-                    <p class="text-gray-400 mb-4">Elegant reach for effortless daily use.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 03</span> Sink Cock</h3>
+                        <p class="text-gray-400 mb-4">Elegant reach for effortless daily use.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./swan neck ornamax.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 04</span> Swan Neck</h3>
-                    <p class="text-gray-400 mb-4">Graceful design with powerful performance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 04</span> Swan Neck</h3>
+                        <p class="text-gray-400 mb-4">Graceful design with powerful performance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./sink mixer ornamax.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 05</span> Sink Mixer</h3>
-                    <p class="text-gray-400 mb-4">Made to Blend Comfort With Class.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 05</span> Sink Mixer
+                        </h3>
+                        <p class="text-gray-400 mb-4">Made to Blend Comfort With Class.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./pillar cock ornamax.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 06</span> Pillar Cock</h3>
-                    <p class="text-gray-400 mb-4">Modern pillar design with superior control.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 06</span> Pillar Cock
+                        </h3>
+                        <p class="text-gray-400 mb-4">Modern pillar design with superior control.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
-                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
+                <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./bib cock ornamax.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 07</span> Bib Cock</h3>
-                    <p class="text-gray-400 mb-4">Compact Design. Powerful Ornamax Performance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 07</span> Bib Cock</h3>
+                        <p class="text-gray-400 mb-4">Compact Design. Powerful Ornamax Performance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./ornamax long body.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 08</span> Long Body</h3>
-                    <p class="text-gray-400 mb-4">Long design crafted for premium performance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 08</span> Long Body</h3>
+                        <p class="text-gray-400 mb-4">Long design crafted for premium performance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
-               <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
+                <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./ornamax angle cock.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 09</span> Angle Cock</h3>
-                    <p class="text-gray-400 mb-4">Precision control for modern water flow.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class=" red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 09</span> Angle Cock
+                        </h3>
+                        <p class="text-gray-400 mb-4">Precision control for modern water flow.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class=" red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
-               <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
+                <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./2x1 Bib Cock ornamax.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 10</span> 2x1 Bib Cock</h3>
-                    <p class="text-gray-400 mb-4">Seamless switching for ultimate bathing comfort.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 10</span> 2x1 Bib Cock
+                        </h3>
+                        <p class="text-gray-400 mb-4">Seamless switching for ultimate bathing comfort.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./2x1 angle cock ornamax.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 11</span> 2x1 Angle Cock</h3>
-                    <p class="text-gray-400 mb-4">Minimal design for pure water output.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 11</span> 2x1 Angle Cock
+                        </h3>
+                        <p class="text-gray-400 mb-4">Minimal design for pure water output.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./concealed stop cock ornamax.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 12</span> Concealed Stop Cock</h3>
-                    <p class="text-gray-400 mb-4">Hidden strength for perfect water control.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 12</span> Concealed Stop
+                            Cock</h3>
+                        <p class="text-gray-400 mb-4">Hidden strength for perfect water control.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Washing machine ornamax.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 13</span> Washing Machine Tap</h3>
-                    <p class="text-gray-400 mb-4">Reliable flow engineered for everyday utility.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 13</span> Washing
+                            Machine Tap</h3>
+                        <p class="text-gray-400 mb-4">Reliable flow engineered for everyday utility.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./2x1 wall mixer telephonic.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 14</span> 2x1 Wall Mixer Telephonic</h3>
-                    <p class="text-gray-400 mb-4">Smart dual-outlet control with smooth switching.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 14</span> 2x1 Wall Mixer
+                            Telephonic</h3>
+                        <p class="text-gray-400 mb-4">Smart dual-outlet control with smooth switching.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ornamax product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./wall mixer 3x1 ornamax.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 15</span> 3x1 Wall Mixer Telephonic</h3>
-                    <p class="text-gray-400 mb-4">Complete bathing control in a single elegant unit.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 15</span> 3x1 Wall Mixer
+                            Telephonic</h3>
+                        <p class="text-gray-400 mb-4">Complete bathing control in a single elegant unit.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Aria -->
-                 <div class="product-item aria product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
+                <div class="product-item aria product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./sinlge lever basin mixer arya.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 01</span> Single Lever Basin Mixer</h3>
-                    <p class="text-gray-400 mb-4">Refined design with precise single-lever control.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 01</span> Single Lever
+                            Basin Mixer</h3>
+                        <p class="text-gray-400 mb-4">Refined design with precise single-lever control.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item aria product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./pillar cock aria.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 02</span> Pillar Cock</h3>
-                    <p class="text-gray-400 mb-4">Minimal form crafted for daily performance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 02</span> Pillar Cock
+                        </h3>
+                        <p class="text-gray-400 mb-4">Minimal form crafted for daily performance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item aria product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./bib cock aria.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 03</span> Bib Cock</h3>
-                    <p class="text-gray-400 mb-4">Classic utility with a smooth, durable finish.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 03</span> Bib Cock</h3>
+                        <p class="text-gray-400 mb-4">Classic utility with a smooth, durable finish.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item aria ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./diverter aria.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 05</span> Diverter</h3>
-                    <p class="text-gray-400 mb-4">Seamless water direction at your command.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 05</span> Diverter</h3>
+                        <p class="text-gray-400 mb-4">Seamless water direction at your command.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
-                 <div class="product-item aria product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
+                <div class="product-item aria product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./long body arya.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 06</span> Long Body</h3>
-                    <p class="text-gray-400 mb-4">Extended reach with a bold, elegant profile.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 06</span> Long Body</h3>
+                        <p class="text-gray-400 mb-4">Extended reach with a bold, elegant profile.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item aria product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./angle cock aria.jpg" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 07</span> Angle Cock</h3>
-                    <p class="text-gray-400 mb-4">Compact design built for reliable control.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 07</span> Angle Cock</h3>
+                        <p class="text-gray-400 mb-4">Compact design built for reliable control.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item aria product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Tip ton spout arya.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 08</span> Tip Ton Spout</h3>
-                    <p class="text-gray-400 mb-4">Effortless press control with a sleek finish.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 08</span> Tip Ton Spout
+                        </h3>
+                        <p class="text-gray-400 mb-4">Effortless press control with a sleek finish.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
-                 <div class="product-item aria  product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
-                    <div><img class="rounded-lg w-full h-full" src="./sink cock arya_imgupscaler.ai_General_8K.jpg" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 09</span> Sink Cock</h3>
-                    <p class="text-gray-400 mb-4">Functional elegance for modern kitchens.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                <div class="product-item aria  product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
+                    <div><img class="rounded-lg w-full h-full" src="./sink cock arya_imgupscaler.ai_General_8K.jpg"
+                            alt="">
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 09</span> Sink Cock</h3>
+                        <p class="text-gray-400 mb-4">Functional elegance for modern kitchens.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item aria product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./swan neck aria.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 10</span> Swan Neck</h3>
-                    <p class="text-gray-400 mb-4">Graceful curves with superior water flow.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 10</span> Swan Neck</h3>
+                        <p class="text-gray-400 mb-4">Graceful curves with superior water flow.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item aria product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./sink mixer aria.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 11</span> Sink Mixer</h3>
-                    <p class="text-gray-400 mb-4">Balanced design for smooth kitchen operation.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 11</span> Sink Mixer</h3>
+                        <p class="text-gray-400 mb-4">Balanced design for smooth kitchen operation.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item aria product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./wall mixer telephonic aria.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 12</span> Wall Mixer Telephonic</h3>
-                    <p class="text-gray-400 mb-4">Precision mixing with modern shower comfort.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 12</span> Wall Mixer
+                            Telephonic</h3>
+                        <p class="text-gray-400 mb-4">Precision mixing with modern shower comfort.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <!--Diverter & Spout-->
                 <div class="product-item ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Flora  diverter.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 15</span> Flora</h3>
-                    <p class="text-gray-400 mb-4">Soft curves inspired by natural elegance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 15</span> Flora</h3>
+                        <p class="text-gray-400 mb-4">Soft curves inspired by natural elegance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Prime diverter.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 16</span> Prime</h3>
-                    <p class="text-gray-400 mb-4">Essential design perfected for daily use.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 16</span> Prime</h3>
+                        <p class="text-gray-400 mb-4">Essential design perfected for daily use.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Alive  diverter.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 18</span> Alive</h3>
-                    <p class="text-gray-400 mb-4">Dynamic form with a modern aesthetic.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 18</span> Alive</h3>
+                        <p class="text-gray-400 mb-4">Dynamic form with a modern aesthetic.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Araya diverter.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 19</span> Araya</h3>
-                    <p class="text-gray-400 mb-4">Bold geometry crafted for contemporary spaces.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 19</span> Araya</h3>
+                        <p class="text-gray-400 mb-4">Bold geometry crafted for contemporary spaces.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Square  diverter.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 20</span> Square</h3>
-                    <p class="text-gray-400 mb-4">Sharp edges for a clean, modern look.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 20</span> Square</h3>
+                        <p class="text-gray-400 mb-4">Sharp edges for a clean, modern look.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ornamax ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./ornamax plain spout.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 16/SC - 23</span> Plain Spout</h3>
-                    <p class="text-gray-400 mb-4">Clean lines designed for effortless water flow.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">ORN - 16/SC - 23</span> Plain
+                            Spout</h3>
+                        <p class="text-gray-400 mb-4">Clean lines designed for effortless water flow.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Alive Plain spout.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 24</span> Alive Plain Spout</h3>
-                    <p class="text-gray-400 mb-4">Minimal styling with a smooth water stream.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 24</span> Alive Plain
+                            Spout</h3>
+                        <p class="text-gray-400 mb-4">Minimal styling with a smooth water stream.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Lyric plain spout.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 25</span> Lyric Plain Spout</h3>
-                    <p class="text-gray-400 mb-4">Simple design flowing with elegance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 25</span> Lyric Plain
+                            Spout</h3>
+                        <p class="text-gray-400 mb-4">Simple design flowing with elegance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./supa tip ton spout.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 26</span> Supa Tip Ton Spout</h3>
-                    <p class="text-gray-400 mb-4">Smart push control with a refined finish.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 26</span> Supa Tip Ton
+                            Spout</h3>
+                        <p class="text-gray-400 mb-4">Smart push control with a refined finish.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="product-item florentine ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
+                <div
+                    class="product-item florentine ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./florentine tip ton spout.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 21/SC - 27</span> Florentine Tip Ton Spout</h3>
-                    <p class="text-gray-400 mb-4">Timeless design with modern press action.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 21/SC - 27</span>
+                            Florentine Tip Ton Spout</h3>
+                        <p class="text-gray-400 mb-4">Timeless design with modern press action.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Glady tip ton spout.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 28</span> Glady Tip Ton Spout</h3>
-                    <p class="text-gray-400 mb-4">Elegant operation with a smooth tactile response.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 28</span> Glady Tip Ton
+                            Spout</h3>
+                        <p class="text-gray-400 mb-4">Elegant operation with a smooth tactile response.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./florentine wall mounted basin mixer.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 22/SC - 30</span> Wall Mounted Basin Mixer</h3>
-                    <p class="text-gray-400 mb-4">Wall-mounted elegance with effortless control.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FL - 22/SC - 30</span> Wall
+                            Mounted Basin Mixer</h3>
+                        <p class="text-gray-400 mb-4">Wall-mounted elegance with effortless control.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./opel.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 31</span> Opel</h3>
-                    <p class="text-gray-400 mb-4">Strong design built for lasting performance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SC - 31</span> Opel</h3>
+                        <p class="text-gray-400 mb-4">Strong design built for lasting performance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item fusion ds product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./fusion wall.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 18/SC - 32</span> Fusion Wall Mounted Basin Mixer</h3>
-                    <p class="text-gray-400 mb-4">Where modern design meets seamless functionality.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">FS - 18/SC - 32</span> Fusion
+                            Wall Mounted Basin Mixer</h3>
+                        <p class="text-gray-400 mb-4">Where modern design meets seamless functionality.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <!--Showers-->
                 <div class="product-item shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./Maze Shower 4x4.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 01</span> Maze Shower 4"x4" With Square Arm</h3>
-                    <p class="text-gray-400 mb-4">Even water spread for a refreshing shower experience.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 01</span> Maze Shower
+                            4"x4" With Square Arm</h3>
+                        <p class="text-gray-400 mb-4">Even water spread for a refreshing shower experience.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./shower 2.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 31</span> Round Ultra-Slim 8"x8"</h3>
-                    <p class="text-gray-400 mb-4">Ultra-Slim Design. Pure Rain Comfort.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 31</span> Round
+                            Ultra-Slim 8"x8"</h3>
+                        <p class="text-gray-400 mb-4">Ultra-Slim Design. Pure Rain Comfort.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./shower 3.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 32</span> Round Ultra-Slim 12"x12" Ceiling</h3>
-                    <p class="text-gray-400 mb-4">Ceiling Rainfall. Ultimate Shower Luxury.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 32</span> Round
+                            Ultra-Slim 12"x12" Ceiling</h3>
+                        <p class="text-gray-400 mb-4">Ceiling Rainfall. Ultimate Shower Luxury.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item aria shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./shower aria.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 04/SH - 22</span> 4"x4" Zen</h3>
-                    <p class="text-gray-400 mb-4">Minimal Form. Maximum Comfort.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">AR - 04/SH - 22</span> 4"x4"
+                            Zen</h3>
+                        <p class="text-gray-400 mb-4">Minimal Form. Maximum Comfort.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./shower 1.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 33</span> Royal</h3>
-                    <p class="text-gray-400 mb-4">Luxury That Commands Presence.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 33</span> Royal</h3>
+                        <p class="text-gray-400 mb-4">Luxury That Commands Presence.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./shower.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 34</span> Rainfall Head Round</h3>
-                    <p class="text-gray-400 mb-4">Natural Rainfall, Everyday Relaxation.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 34</span> Rainfall Head
+                            Round</h3>
+                        <p class="text-gray-400 mb-4">Natural Rainfall, Everyday Relaxation.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./ABS jaquar New shower.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 35</span> 4"x4" ABS Jaquar New</h3>
-                    <p class="text-gray-400 mb-4">Compact Design. Powerful Flow.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 35</span> 4"x4" ABS
+                            Jaquar New</h3>
+                        <p class="text-gray-400 mb-4">Compact Design. Powerful Flow.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./shower 4.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 36</span> Duo 360 Head Rain-Shower</h3>
-                    <p class="text-gray-400 mb-4">360° Coverage. Complete Shower Experience.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 36</span> Duo 360 Head
+                            Rain-Shower</h3>
+                        <p class="text-gray-400 mb-4">360° Coverage. Complete Shower Experience.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./telephonic 1.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 37</span> Stella ABS Telephonic Hand Shower</h3>
-                    <p class="text-gray-400 mb-4">Elegant Design. Effortless Control.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 37</span> Stella ABS
+                            Telephonic Hand Shower</h3>
+                        <p class="text-gray-400 mb-4">Elegant Design. Effortless Control.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./telephonic 2.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 38</span> Quinn ABS Telephonic Hand Shower</h3>
-                    <p class="text-gray-400 mb-4">Modern Comfort, Flexible Performance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 38</span> Quinn ABS
+                            Telephonic Hand Shower</h3>
+                        <p class="text-gray-400 mb-4">Modern Comfort, Flexible Performance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./telephonic 3.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 39</span> Premium ABS Hand Shower</h3>
-                    <p class="text-gray-400 mb-4">Premium Build. Smooth Water Flow.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 39</span> Premium ABS
+                            Hand Shower</h3>
+                        <p class="text-gray-400 mb-4">Premium Build. Smooth Water Flow.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./telephonic 4.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 40</span> Ess-Ess Square Hand Shower</h3>
-                    <p class="text-gray-400 mb-4">Sharp Design. Refined Comfort.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 40</span> Ess-Ess Square
+                            Hand Shower</h3>
+                        <p class="text-gray-400 mb-4">Sharp Design. Refined Comfort.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item shower product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./telephonic 5.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 41</span> Ultra ZX Hand Shower</h3>
-                    <p class="text-gray-400 mb-4">High Performance. Sleek Finish.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">SH - 41</span> Ultra ZX Hand
+                            Shower</h3>
+                        <p class="text-gray-400 mb-4">High Performance. Sleek Finish.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
-                <!--Health Faucets-->
+                <!--Accessories-->
                 <div class="product-item acc product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./health faucet.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">HF - 17</span> Carnival ABS Health Faucet</h3>
-                    <p class="text-gray-400 mb-4">Smart Hygiene, Everyday Comfort.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">HF - 17</span> Carnival ABS
+                            Health Faucet</h3>
+                        <p class="text-gray-400 mb-4">Smart Hygiene, Everyday Comfort.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item acc product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./health faucet 1.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">HF - 18</span> Parry Premium ABS Health Faucet</h3>
-                    <p class="text-gray-400 mb-4">Premium Hygiene, Lasting Performance.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">HF - 18</span> Parry Premium
+                            ABS Health Faucet</h3>
+                        <p class="text-gray-400 mb-4">Premium Hygiene, Lasting Performance.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item acc product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./health faucet 2.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">HF - 19</span> Premium Cubic Health Faucet</h3>
-                    <p class="text-gray-400 mb-4">Bold Cubic Design. Superior Hygiene</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">HF - 19</span> Premium Cubic
+                            Health Faucet</h3>
+                        <p class="text-gray-400 mb-4">Bold Cubic Design. Superior Hygiene</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item acc product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./health faucet 3.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">HF - 20</span> Recta ABS Health Faucet</h3>
-                    <p class="text-gray-400 mb-4">Straight Lines. Smooth Operation.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">HF - 20</span> Recta ABS
+                            Health Faucet</h3>
+                        <p class="text-gray-400 mb-4">Straight Lines. Smooth Operation.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="product-item acc product-card bg-gray-900 rounded-xl p-6 border border-red-900/30">
                     <div><img class="rounded-lg w-full h-full" src="./health faucet 4.png" alt="">
-                    <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">HF - 21</span>  Kohler Elate Health Faucet</h3>
-                    <p class="text-gray-400 mb-4">Refined Hygiene with Elegant Control.</p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-red-500 font-bold text-xl"></span>
-                        <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get Details!</button></a>
-                    </div></div>
+                        <h3 class="text-xl font-semibold mb-2"><span class="text-red-500">HF - 21</span> Kohler Elate
+                            Health Faucet</h3>
+                        <p class="text-gray-400 mb-4">Refined Hygiene with Elegant Control.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-red-500 font-bold text-xl"></span>
+                            <a href="https://wa.me/message/GTCTXOOHS2XDD1"><button
+                                    class="red-gradient px-4 py-2 rounded-lg hover:shadow-lg bg-green-600 transition-all">Get
+                                    Details!</button></a>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -1242,14 +1664,15 @@
             <div class="grid md:grid-cols-4 gap-8">
                 <div>
                     <div class="text-2xl font-bold text-red-500 mb-4">Waterlife</div>
-                    <p class="text-gray-400 mb-4">Premium bathroom solutions for modern homes. Quality, innovation, and style in every product.</p>
+                    <p class="text-gray-400 mb-4">Premium bathroom solutions for modern homes. Quality, innovation, and
+                        style in every product.</p>
                 </div>
                 <div>
                     <h3 class="font-semibold mb-4">Products</h3>
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="#" class="hover:text-red-400 transition-colors">Faucets</a></li>
                         <li><a href="#" class="hover:text-red-400 transition-colors">Shower Systems</a></li>
-                        <li><a href="#" class="hover:text-red-400 transition-colors">Health Faucets</a></li>
+                        <li><a href="#" class="hover:text-red-400 transition-colors">Accessories</a></li>
                     </ul>
                 </div>
                 <div>
@@ -1286,16 +1709,16 @@
         function filterProducts(category) {
             const products = document.querySelectorAll('.product-item');
             const buttons = document.querySelectorAll('.filter-btn');
-            
+
             // Update button states
             buttons.forEach(btn => {
                 btn.classList.remove('red-gradient');
                 btn.classList.add('bg-gray-800');
             });
-            
+
             event.target.classList.remove('bg-gray-800');
             event.target.classList.add('red-gradient');
-            
+
             // Filter products with animation
             products.forEach(product => {
                 if (category === 'all' || product.classList.contains(category)) {
@@ -1313,16 +1736,16 @@
         }
 
         // Add to cart functionality
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const addToCartButtons = document.querySelectorAll('.product-card button');
-            
+
             addToCartButtons.forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     const originalText = this.textContent;
-                    
+
                     this.classList.add('bg-green-600');
                     this.classList.remove('red-gradient');
-                    
+
                     setTimeout(() => {
                         this.textContent = originalText;
                         this.classList.remove('bg-green-600');
@@ -1352,18 +1775,16 @@
         });
 
         // Close mobile menu when clicking outside
-        document.addEventListener('click', function(event) {
+        document.addEventListener('click', function (event) {
             const mobileMenu = document.getElementById('mobile-menu');
             const menuButton = event.target.closest('button');
-            
+
             if (mobileMenu && !mobileMenu.contains(event.target) && !menuButton) {
                 mobileMenu.classList.add('hidden');
             }
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98e84f1564f459c3',t:'MTc2MDQ1NzgyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'98e84f1564f459c3',t:'MTc2MDQ1NzgyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
 </html>
-
-
-
-
